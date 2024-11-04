@@ -1,0 +1,343 @@
+<html><head><base href="suporte.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Group - Suporte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
+        background: #1b2838;
+        color: #ffffff;
+    }
+    
+    .header {
+        background: #171a21;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        color: #66c0f4;
+        font-size: 2em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .nav-menu {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-menu a {
+        color: #c7d5e0;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .nav-menu a:hover {
+        color: #ffffff;
+    }
+    
+    .support-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .support-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .support-header h1 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        color: #66c0f4;
+    }
+    
+    .support-header p {
+        color: #c7d5e0;
+        font-size: 1.1em;
+    }
+    
+    .support-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .support-card {
+        background: #16202d;
+        border-radius: 8px;
+        padding: 25px;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+    
+    .support-card:hover {
+        transform: translateY(-5px);
+        background: #1c2838;
+    }
+    
+    .support-card h3 {
+        color: #66c0f4;
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+    
+    .support-card p {
+        color: #c7d5e0;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    
+    .contact-section {
+        margin-top: 60px;
+        text-align: center;
+        padding: 40px;
+        background: #16202d;
+        border-radius: 8px;
+    }
+    
+    .contact-section h2 {
+        color: #66c0f4;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #c7d5e0;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #2a475e;
+        background: #2a475e;
+        color: #ffffff;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        outline: none;
+        border-color: #66c0f4;
+    }
+    
+    .submit-btn {
+        background: #66c0f4;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .submit-btn:hover {
+        background: #1999ff;
+    }
+    
+    .faq-section {
+        margin-top: 60px;
+    }
+    
+    .faq-item {
+        background: #16202d;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    
+    .faq-question {
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #66c0f4;
+        font-weight: 500;
+    }
+    
+    .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        color: #c7d5e0;
+    }
+    
+    .faq-answer.active {
+        padding: 20px;
+        max-height: 500px;
+    }
+    
+    .footer {
+        background: #171a21;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">SK Group</a>
+            <nav class="nav-menu">
+                <a href="index.html">Loja</a>
+                <a href="/library.html">Biblioteca</a>
+                <a href="/community.html">Comunidade</a>
+                <a href="suporte.html">Suporte</a>
+            </nav>
+        </header>
+    
+        <div class="support-container">
+            <div class="support-header">
+                <h1>Central de Suporte</h1>
+                <p>Como podemos ajudar você hoje?</p>
+            </div>
+    
+            <div class="support-grid">
+                <div class="support-card">
+                    <h3>Problemas Técnicos</h3>
+                    <p>Soluções para problemas de instalação, desempenho e compatibilidade dos jogos.</p>
+                </div>
+    
+                <div class="support-card">
+                    <h3>Conta e Segurança</h3>
+                    <p>Ajuda com login, recuperação de senha e proteção da sua conta.</p>
+                </div>
+    
+                <div class="support-card">
+                    <h3>Pagamentos</h3>
+                    <p>Informações sobre métodos de pagamento, reembolsos e faturas.</p>
+                </div>
+    
+                <div class="support-card">
+                    <h3>Downloads</h3>
+                    <p>Suporte para download de jogos e atualizações.</p>
+                </div>
+            </div>
+    
+            <div class="faq-section">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como faço para colocar um jogo meu no site?
+                    </div>
+                    <div class="faq-answer">
+                        basta entrar em contato com as opções abaixo conosco.
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Qual é a política de reembolso?
+                    </div>
+                    <div class="faq-answer">
+                        Cada Jogo tem sua propria politica de reembolso, para entender basta entrar em contato com a empresa do game!.
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como resolver problemas de desempenho nos jogos?
+                    </div>
+                    <div class="faq-answer">
+                        Contrate uma empresa Parceira em Otimização de jogos, pesquise "parceria" no navegador.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contact-section">
+                <h2>Entre em Contato</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="technical">Problema Técnico</option>
+                            <option value="account">Conta e Segurança</option>
+                            <option value="payment">Pagamentos</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    
+        <footer class="footer">
+            <p>© 2023 SK Group. Todos os direitos reservados.</p>
+        </footer>
+    
+        <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+            });
+        });
+    
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+    
+            const whatsappMessage = `Nome: ${name}%0A` + 
+                                  `Email: ${email}%0A` +
+                                  `Assunto: ${subject}%0A` +
+                                  `Mensagem: ${message}`;
+    
+            const whatsappNumber = '5519995165953';
+            
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+            
+            window.location.href = whatsappUrl;
+        });
+        </script>
+    </body></html>
